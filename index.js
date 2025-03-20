@@ -1,6 +1,8 @@
 const { Client, GatewayIntentBits, EmbedBuilder } = require('discord.js');
 const { Player } = require('discord-player');
-const { token } = require('./config.json');
+
+// ใช้ token จาก Environment Variables
+const token = process.env.TOKEN;
 
 // สร้าง Discord client
 const client = new Client({
@@ -113,5 +115,5 @@ client.on('messageCreate', async (message) => {
   }
 });
 
-// ล็อกอินด้วย token
+// ล็อกอินด้วย token จาก Environment Variables
 client.login(token);
