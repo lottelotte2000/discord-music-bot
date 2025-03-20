@@ -2,7 +2,7 @@ const { Client, GatewayIntentBits, EmbedBuilder } = require('discord.js');
 const { Player } = require('discord-player');
 
 // ใช้ token จาก Environment Variables
-const token = process.env.TOKEN;
+const token = process.env.token;
 
 // สร้าง Discord client
 const client = new Client({
